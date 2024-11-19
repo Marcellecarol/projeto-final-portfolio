@@ -1,0 +1,191 @@
+/* Reseta as margens e paddings de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    background-color: #6a1b9a; /* Lilás escuro */
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8bbd0; /* Rosa claro */
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 1100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #6a1b9a; /* Lilás escuro */
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Estilo das listas de formações e experiências */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+ul li span {
+    font-style: italic;
+    color: #888;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #f8bbd0; /* Rosa claro */
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #f48fb1; /* Rosa mais intenso */
+    transform: scale(1.05);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Rodapé */
+footer {
+    background-color: #6a1b9a; /* Lilás escuro */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #f8bbd0; /* Rosa claro */
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
