@@ -1,191 +1,336 @@
-/* Reseta as margens e paddings de todos os elementos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.nav-bar {
+    background-color: #ffffff;
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-/* Corpo da página */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Estilo para a barra de navegação */
-nav {
-    background-color: #6a1b9a; /* Lilás escuro */
-    padding: 15px 0;
-}
-
-nav ul {
-    list-style-type: none;
+.nav-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+    margin-right: 20px;
 }
 
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
+.nav-list a {
     text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    color: #282938;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #f8bbd0; /* Rosa claro */
+.nav-list a:hover {
+    color: #6371ff;
 }
 
-/* Seções */
-section {
-    padding: 40px 20px;
-    margin: 30px auto;
-    max-width: 1100px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+body {
+    margin-top: 100px; 
 }
 
-h1, h2, h3 {
-    color: #6a1b9a; /* Lilás escuro */
+
+.hero-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-h1 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text > h1 {
+    font-size: 2em;
+    color: #282938;
+}
+
+.hero-text > h1 > span {
+    color: #6371ff;
+}
+
+.hero-text > p {
+    margin: 20px 0;
+    color: #1c1e53;
+}
+
+.btn-container {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    border: 1px solid #ff6464;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #ff6464;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff8080;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-github {
+    color: #ff6464;
+    background-color: #ffffff;
+    border: 1px solid #ff6464;
+}
+
+.btn-github:hover {
+    background-color: #ffecec;
+    border-color: #ff8080;
+    transform: scale(1.05);
+}
+
+.hero-image > img {
+    max-width: 100%;
+    height: auto;
+    padding: 50px 30px 0 50px;
+    object-fit: cover;
+}
+
+.section-formacoes {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 h2 {
     font-size: 32px;
+    color: #282938;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
-h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-p {
-    font-size: 18px;
-    color: #555;
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-/* Estilo das listas de formações e experiências */
-ul {
-    list-style-type: none;
+.list-formacao {
+    list-style: none;
     padding: 0;
 }
 
-ul li {
-    margin-bottom: 20px;
+.formacao-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 0;
 }
 
-ul li span {
-    font-style: italic;
+.formacao-item h3 {
+    font-size: 1.2em;
+    color: #282938;
+    margin-bottom: 5px;
+}
+
+.formacao-item p {
+    color: #555;
+    margin: 0;
+}
+
+.formacao-item span {
+    font-size: 0.9em;
     color: #888;
 }
 
-/* Estilo dos botões */
-button {
-    background-color: #f8bbd0; /* Rosa claro */
-    color: white;
-    padding: 12px 30px;
-    font-size: 16px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin: 10px;
+.sobre-mim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 0;
+    background-color: #ff6464
 }
 
-button:hover {
-    background-color: #f48fb1; /* Rosa mais intenso */
-    transform: scale(1.05);
+.sobre-mim-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
 }
-
-button a {
-    color: white;
-    text-decoration: none;
-}
-
-img {
+.sobre-mim-img img {
+    max-width: 220px;
     width: 100%;
-    max-width: 300px;
-    border-radius: 50%;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 10px;
 }
 
-/* Rodapé */
+.sobre-mim-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.sobre-mim-text h2 {
+    font-size: 2em;
+    color: #282938;
+}
+
+.sobre-mim-text p {
+    font-size: 1rem;
+    color: #333;
+    text-align: justify;
+}
+
+#experiencias {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#experiencias h2 {
+    margin-bottom: 20px;
+    color: #282938;
+}
+
+#experiencias ul {
+    list-style: none;
+    padding: 0;
+}
+
+#experiencias li {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 0;
+}
+
+#experiencias .experiencia-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+#experiencias h3 {
+    font-size: 1.2em;
+    color: #282938;
+    margin-bottom: 5px;
+}
+
+#experiencias p {
+    color: #555;
+    margin: 0;
+}
+
+#experiencias span {
+    font-size: 0.9em;
+    color: #888;
+}
+
+#experiencias a {
+    color: #6371ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#experiencias a:hover {
+    color: #4a56d6;
+}
+
+.projetos-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; 
+}
+
+.projetos-list li {
+    margin-bottom: 10px;
+}
+
+
+
 footer {
-    background-color: #6a1b9a; /* Lilás escuro */
-    color: white;
-    padding: 30px 20px;
+    background-color: #282938;
+    color: #ffffff;
+    padding: 20px;
     text-align: center;
 }
 
 footer ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 footer ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 footer ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #f8bbd0; /* Rosa claro */
+    color: #6371ff;
 }
 
 footer p {
-    margin-top: 20px;
-    font-size: 14px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #aaaaaa;
 }
 
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+@media (max-width: 768px) {
+    .nav-bar {
+        height: 70px;
     }
 
-    section {
-        width: 90%;
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-text > h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-text > p {
+        font-size: 1em;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    .sobre-mim-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-mim-text {
+        max-width: 100%;
     }
 
     footer ul {
         flex-direction: column;
     }
-
-    h1 {
-        font-size: 32px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
 }
-
